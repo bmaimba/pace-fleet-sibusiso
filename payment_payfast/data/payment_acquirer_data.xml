@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- <record id="payment.payment_acquirer_payfast" model="payment.acquirer"> -->
+        <record id="payment_acquirer_payfast" model="payment.acquirer">
+            <field name="name">Payfast</field>
+            <field name="image_128" type="base64" file="payment_payfast/static/src/img/payfast_icon.png"/>
+            <field name="provider">payfast</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="view_template_id" ref="payfast_acquirer_button"/>
+            <field name="state">test</field>
+            <field name="pre_msg"><![CDATA[You will be redirect to payfast after clicking on this Pay Now]]></field>
+            <field name="merchant_key">q1cd2rdny4a53</field>
+            <field name="merchant_id">10004002</field>
+        </record>
+    </data>
+</odoo>
